@@ -24,7 +24,12 @@ getDaysInMonth(1, -2020); → should return -1 since the parameter year is outsi
 
 
 public class NumberOfDaysInMonth {
-    // write code here
+public static void main(String[] args) {
+        System.out.println(getDaysInMonth(1,2020));
+        System.out.println(getDaysInMonth(2,2020));
+        System.out.println(getDaysInMonth(-1,2020));
+        System.out.println(getDaysInMonth(1,-2020));
+    }
     public static int getDaysInMonth(int month,int year){
         if (year < 1 || year > 9_999) {
             return -1;
