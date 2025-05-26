@@ -1,0 +1,17 @@
+#the below code is used to compare two floating point numbers upto 3 decimal places:
+public class decimalComparetor {
+    public static void main(String[] args) {
+        areEqualByThreeDecimalPlaces(3.175, 3.1756);
+    }
+
+    public static boolean areEqualByThreeDecimalPlaces(double number1, double number2) {
+// the logic is to multiply the number by 1000 first and then divide it by 1000 and typecasting it to an integer, if after the operation both values are same then the floating numbers are equal
+        double resultone = (int)(number1 * 1000) / 1000; 
+        double resulttwo = (int)(number2 * 1000) / 1000;
+        if (resultone == resulttwo) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
